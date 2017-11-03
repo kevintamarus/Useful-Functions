@@ -26,3 +26,6 @@ function timeSince(date) {
 console.log( new Date("2017-08-14T03:37:34.023Z"))
 console.log( new Date() - new Date("2017-08-14T03:37:34.023Z"))
 console.log(timeSince(new Date("2017-08-14T03:37:34.023Z")))
+
+console.log(new Date() - Date.parse('2017-10-28T19:08:22.455912Z')) //=> changes to milliseconds since current
+console.log(new Date('2017-10-28T19:08:22.455912Z').toLocaleDateString()) //=> changes to YYYY/MM/DD format
